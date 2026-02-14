@@ -1,0 +1,39 @@
+{
+  "kind": "build_request",
+  "title": "Change selected button color to blue",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "text": "Update ONLY the selected button element at XPath /html[1]/body[1]/div[1]/div[1]/div[1]/div[3]/button[1] so that it uses a blue color styling (blue background and appropriate hover/focus/disabled styles) while keeping its existing size, icon/text, and behavior unchanged.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "Blue colour"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The selected button renders with a clearly blue color scheme in its normal state.",
+        "Hover and focus-visible states remain accessible (visible focus ring, sufficient contrast).",
+        "Disabled state remains visually distinct and consistent with the blue styling.",
+        "No other buttons or global theme colors are changed; only the selected button’s styling is affected.",
+        "The app compiles and runs without UI regressions."
+      ]
+    }
+  ],
+  "constraints": [
+    "Apply the change ONLY to the element identified by XPath /html[1]/body[1]/div[1]/div[1]/div[1]/div[3]/button[1].",
+    "Do not modify any files under frontend/src/components/ui (read-only)."
+  ],
+  "nonGoals": [
+    "Do not change authentication flows or remove login/logout functionality as part of this request.",
+    "Do not apply a global blue theme across the entire app; limit changes to the selected button only."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

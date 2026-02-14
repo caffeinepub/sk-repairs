@@ -1,0 +1,38 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T01:49:04.839Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-7",
+        "summary": "Update ONLY the selected button element at XPath /html[1]/body[1]/div[1]/div[1]/div[1]/div[3]/button[1] so that it uses a blue color styling (blue background and appropriate hover/focus/disabled styles) while keeping its existing size, icon/text, and behavior unchanged.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/JobsDashboardPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/JobsDashboardPage.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/pages/JobsDashboardPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

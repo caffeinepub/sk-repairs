@@ -1,0 +1,25 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Make the selected floating action button use a blue color scheme",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "summary": "Change only the specific targeted button to a blue background with accessible hover/focus/disabled states while preserving size/content/behavior and leaving all other buttons untouched.",
+      "acceptanceCriteria": [
+        "The selected button renders with a clearly blue color scheme in its normal state.",
+        "Hover and focus-visible states remain accessible (visible focus ring, sufficient contrast).",
+        "Disabled state remains visually distinct and consistent with the blue styling.",
+        "No other buttons or global theme colors are changed; only the selected button’s styling is affected.",
+        "The app compiles and runs without UI regressions."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/JobsDashboardPage.tsx",
+          "operation": "modify",
+          "description": "Update ONLY the floating add Button (the one rendered at the bottom of JobsDashboardPage, matching the requested XPath target) by adding blue-specific Tailwind utility classes to its existing className: set a blue background and text color, plus blue hover, focus-visible ring (with ring offset), and disabled styles; keep existing sizing/positioning classes (fixed/bottom/right/rounded/shadow/h-14/w-14/p-0), icon/text, and onClick behavior unchanged. Do not modify any files under frontend/src/components/ui."
+        }
+      ]
+    }
+  ]
+}

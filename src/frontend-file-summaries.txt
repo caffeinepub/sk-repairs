@@ -1,0 +1,14 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, route definitions for all pages (dashboard, job details, add/edit, settings), and providers for theme and authentication.",
+  "frontend/src/components/layout/AppShell.tsx": "Shared layout component providing consistent header with app branding and login button, main content area, and bottom navigation bar for Jobs and Settings tabs.",
+  "frontend/src/components/auth/AuthGate.tsx": "Authentication gate component that displays a login screen for unauthenticated users and shows loading state during initialization, blocking access to app content until logged in.",
+  "frontend/src/components/auth/LoginButton.tsx": "Login/logout button component that handles Internet Identity authentication, clears React Query cache on logout, and displays appropriate loading states.",
+  "frontend/src/components/auth/ProfileSetupDialog.tsx": "Modal dialog that prompts new users to enter their name on first login, using showCloseButton prop instead of hideClose to prevent closing the dialog.",
+  "frontend/src/hooks/useJobs.ts": "React Query hooks for all job CRUD operations (list, get, create, update, delete) and user profile management, with proper cache invalidation and error handling.",
+  "frontend/src/pages/JobsDashboardPage.tsx": "Main dashboard page displaying job statistics cards, search input, status filter tabs using Status enum values, and a list of repair jobs with navigation; includes a blue-styled floating action button for adding new jobs.",
+  "frontend/src/pages/JobDetailsPage.tsx": "Job details page showing complete job information with status badge using Status enum values, device details, problem description, and delete action with confirmation.",
+  "frontend/src/pages/JobUpsertPage.tsx": "Combined add/edit form page for repair jobs using Status enum values (Status.pending, Status.in_progress, Status.completed) instead of string literals for type safety.",
+  "frontend/src/pages/SettingsPage.tsx": "Settings page displaying app information and statistics using Status enum values for filtering jobs by status category.",
+  "frontend/src/utils/jobFiltering.ts": "Utility functions for filtering jobs by status and search query (customer, brand, model, issue, ID) and sorting jobs by ID in descending order (newest first).",
+  "frontend/src/index.css": "Global styles with OKLCH color system using a neutral slate palette with subtle amber/green accents suitable for a service center theme, avoiding blue+purple combinations."
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build a React app for a camera repair/service center to track repair jobs (CRUD), with list/dashboard views, search/filtering by status, job detail view, and a settings screen showing basic stats.",
+  "architectural_notes": [
+    "App is a single-page React UI using local component state for repair jobs; uses memoized filtering (useMemo) and form state syncing (useEffect) for add/edit.",
+    "User explicitly requested a blue color theme; theme guidance should allow blue (overrides prior avoidance note)."
+  ],
+  "known_issues": [
+    "Provided JSX snippet appears truncated/incomplete at the end; ensure final JSX closes correctly (remove stray quote in closing </div>)."
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-the-main-frontend-ui-for-a-camera-service-center-repair-tracker-with-these-screens-and-flows-dashboard-list-view-of-repair-jobs-add-new-job-form-job-details-view-edit-job-form-and-settings-screen-with-basic-statistics",
+      "title": "Build the main frontend UI for a camera service center repair tracker with these screens and flows: dashboard/list view of repair jobs, add new job form, job details view, edit job form, and settings screen with basic statistics.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-client-side-search-status-based-filtering-tabs-and-sorting-consistent-with-the-provided-ui-behavior-tabs-for-all-sent-for-repair-completed-search-across-customer-brand-model-mobile-and-id-default-sort-newest-first",
+      "title": "Implement client-side search, status-based filtering tabs, and sorting consistent with the provided UI behavior: tabs for All, Sent for Repair, Completed; search across customer, brand, model, mobile, and id; default sort newest-first.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-wire-the-frontend-to-the-motoko-backend-using-the-project-s-actor-agent-setup-and-react-query-so-that-jobs-are-loaded-from-the-canister-and-all-crud-actions-update-the-ui-reliably-including-loading-and-error-states",
+      "title": "Wire the frontend to the Motoko backend using the project’s actor/agent setup and React Query so that jobs are loaded from the canister and all CRUD actions update the UI reliably (including loading and error states).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-and-finalize-the-react-component-structure-so-the-app-compiles-without-jsx-syntax-errors-including-correcting-the-truncated-incorrect-closing-tag-shown-in-the-provided-snippet",
+      "title": "Fix and finalize the React component structure so the app compiles without JSX syntax errors (including correcting the truncated/incorrect closing tag shown in the provided snippet).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-visual-theme-across-the-app-colors-typography-spacing-and-component-styling-suitable-for-a-camera-repair-service-center-interface-and-keep-it-consistent-across-list-details-forms-and-settings-avoid-a-blue-purple-palette-unless-explicitly-requested",
+      "title": "Apply a coherent visual theme across the app (colors, typography, spacing, and component styling) suitable for a camera repair/service center interface, and keep it consistent across list, details, forms, and settings (avoid a blue+purple palette unless explicitly requested).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-only-the-selected-button-element-at-xpath-html-1-body-1-div-1-div-1-div-1-div-3-button-1-so-that-it-uses-a-blue-color-styling-blue-background-and-appropriate-hover-focus-disabled-styles-while-keeping-its-existing-size-icon-text-and-behavior-unchanged",
+      "title": "Update ONLY the selected button element at XPath /html[1]/body[1]/div[1]/div[1]/div[1]/div[3]/button[1] so that it uses a blue color styling (blue background and appropriate hover/focus/disabled styles) while keeping its existing size, icon/text, and behavior unchanged.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Camera repair job tracker app (React): jobs list/dashboard, search, status tabs (All/Sent/Completed), and sorting",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Repair job CRUD: add new job, edit existing job, delete job with confirmation",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Job details screen with customer/device/problem/notes and status badge",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Settings screen with app info and basic statistics (total, completed, pending)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Implement a Motoko backend in the single main actor that persists camera repair jobs and supports CRUD operations needed by the frontend: create job, update job, delete job (by id), list jobs (return all jobs), and get job by id.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Remove/disable any login option from the UI (no authentication flow shown to users)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Update app visual theme to use a blue color scheme (user explicitly requested blue)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "SK Repairs",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

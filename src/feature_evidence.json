@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-only-the-selected-button-element-at-xpath-html-1-body-1-div-1-div-1-div-1-div-3-button-1-so-that-it-uses-a-blue-color-styling-blue-background-and-appropriate-hover-focus-disabled-styles-while-keeping-its-existing-size-icon-text-and-behavior-unchanged",
+      "featureTitle": "Update ONLY the selected button element at XPath /html[1]/body[1]/div[1]/div[1]/div[1]/div[3]/button[1] so that it uses a blue color styling (blue background and appropriate hover/focus/disabled styles) while keeping its existing size, icon/text, and behavior unchanged.",
+      "files": [
+        "frontend/src/pages/JobsDashboardPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
